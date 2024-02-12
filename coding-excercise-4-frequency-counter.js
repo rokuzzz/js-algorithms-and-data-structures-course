@@ -1,5 +1,5 @@
 function areThereDuplicates(...args) {
-  const frequencyCounter = [];
+  const frequencyCounter = {};
 
   for (let arg of args) {
     frequencyCounter[arg] = (frequencyCounter[arg] || 0) + 1;
