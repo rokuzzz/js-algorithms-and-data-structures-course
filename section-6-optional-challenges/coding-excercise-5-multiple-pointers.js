@@ -5,7 +5,7 @@ function averagePair(sortedIntegers, targetAvg) {
   let leftPointer = 0;
   let rightPointer = sortedIntegers.length - 1;
 
-  // Use a two-pointer approach to find if any pair averages to the targetAvg
+  // Use a Multiple Pointers (two-pointer) pattern to find if any pair averages to the targetAvg
   while (leftPointer < rightPointer) {
     let currentAvg =
       (sortedIntegers[leftPointer] + sortedIntegers[rightPointer]) / 2;
@@ -19,9 +19,11 @@ function averagePair(sortedIntegers, targetAvg) {
     }
   }
 
+  // If no pair found that averages to the target, return false
   return false;
 }
 
+// Test cases
 console.log('1: ', averagePair([1, 2, 3], 2.5)); // true
 console.log('2: ', averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8)); // true
 console.log('3: ', averagePair([-1, 0, 3, 4, 5, 6], 4.1)); // false
