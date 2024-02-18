@@ -1,3 +1,12 @@
+/**
+ * Challenge: Multiple Pointers - averagePair
+ *
+ * Description:
+ * Write a function called averagePair. Given a sorted array of integers and a target average,
+ * determine if there is a pair of values in the array where the average of the pair equals the
+ * target average. There may be more than one pair that matches the average target.
+ */
+
 function averagePair(sortedIntegers, targetAvg) {
   // Edge case: An average cannot be formed from an empty array
   if (sortedIntegers.length == 0) return false;

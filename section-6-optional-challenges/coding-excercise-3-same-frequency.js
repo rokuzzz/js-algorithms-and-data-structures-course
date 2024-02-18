@@ -1,3 +1,11 @@
+/**
+ * Challenge: Frequency Counter - sameFrequency
+ *
+ * Description:
+ * Write a function called sameFrequency. Given two positive integers, find out if the two numbers
+ * have the same frequency of digits.
+ */
+
 function sameFrequency(int1, int2) {
   const str1 = int1.toString();
   const str2 = int2.toString();

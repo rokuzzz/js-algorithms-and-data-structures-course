@@ -1,3 +1,12 @@
+/**
+ * Challenge: Frequency Counter - validAnagram
+ *
+ * Description:
+ * Given two strings, write a function to determine if the second string is an anagram of the
+ * first. An anagram is a word, phrase, or name formed by rearranging the letters of another,
+ * such as cinema, formed from iceman.
+ */
+
 function validAnagram(firstString, secondString) {
   // Check if both strings have the same length
   if (firstString.length !== secondString.length) {
