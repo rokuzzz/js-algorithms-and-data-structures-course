@@ -6,16 +6,27 @@
  * a palindrome (reads the same forward and backward). Otherwise it returns false.
  */
 
+// function isPalindrome(word) {
+//   function reverseStr(str) {
+//     if (str.length <= 1) return str;
+
+//     return (copy = str[str.length - 1] + reverseStr(str.slice(0, -1)));
+//   }
+
+//   const reversed = reverseStr(word);
+
+//   return word === reversed;
+// }
+
+// Without helper function
 function isPalindrome(word) {
-  function reverseStr(str) {
-    if (str.length <= 1) return str;
+  if (word.length <= 1) return true;
 
-    return (copy = str[str.length - 1] + reverseStr(str.slice(0, -1)));
+  if (word[0] === word[word.length - 1]) {
+    return isPalindrome(word.slice(1, -1));
+  } else {
+    return false;
   }
-
-  const reversed = reverseStr(word);
-
-  return word === reversed;
 }
 
 // Test cases
