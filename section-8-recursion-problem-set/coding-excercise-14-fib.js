@@ -27,6 +27,12 @@ function fib(n) {
   return fibNumbers[fibNumbers.length - 1];
 }
 
+// Alternative solution with direct recursion:
+// function fib(n){
+//   if (n <= 2) return 1;
+//   return fib(n-1) + fib(n-2);
+// }
+
 // Test cases
 console.log('1: ', fib(4)); // 3
 console.log('2: ', fib(10)); // 55
