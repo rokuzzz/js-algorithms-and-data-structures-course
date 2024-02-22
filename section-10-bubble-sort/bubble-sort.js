@@ -6,11 +6,12 @@
  * @return {number[]} The sorted array.
  */
 
-const swap = (arr, idx1, idx2) => {
-  [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
-};
-
 function bubbleSort(array) {
+  // Swaps elements in the array at given indices
+  function swap(arr, idx1, idx2) {
+    [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
+  }
+
   let noSwaps;
 
   // Perform passes over the array to sort it
