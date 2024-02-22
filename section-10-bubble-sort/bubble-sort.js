@@ -18,7 +18,7 @@ function bubbleSort(array) {
     noSwaps = true; // Assume no swaps will occur in this round
 
     // Compare each pair of adjacent elements and swap if out of order
-    for (let currentIndex = 0; currentIndex < i; j++) {
+    for (let currentIndex = 0; currentIndex < round; currentIndex++) {
       if (array[currentIndex] > array[currentIndex + 1]) {
         swap(array, currentIndex, currentIndex + 1);
         noSwaps = false; // A swap occurred
