@@ -1,13 +1,10 @@
 function mergeSortedArrays(firstArray, secondArray) {
+  const mergedResult = [];
   let firstIndex = 0;
   let secondIndex = 0;
-  const mergedResult = [];
 
   while (firstIndex < firstArray.length && secondIndex < secondArray.length) {
-    if (
-      firstArray[firstIndex] < secondArray[secondIndex] ||
-      secondIndex >= secondArray.length
-    ) {
+    if (firstArray[firstIndex] < secondArray[secondIndex]) {
       mergedResult.push(firstArray[firstIndex++]);
     } else {
       mergedResult.push(secondArray[secondIndex++]);
