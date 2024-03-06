@@ -1,0 +1,20 @@
+{
+  "name": "js-algorithms-and-data-structures-masterclass",
+  "version": "1.0.0",
+  "description": "This repository contains my personal solutions to the \"JavaScript Algorithms and Data Structures Masterclass\" by Colt Steele on [Udemy](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/). The course offers an in-depth exploration of JavaScript fundamentals, algorithms, and data structures.",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rokuzzz/js-algorithms-and-data-structures-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rokuzzz/js-algorithms-and-data-structures-course/issues"
+  },
+  "homepage": "https://github.com/rokuzzz/js-algorithms-and-data-structures-course#readme"
+}

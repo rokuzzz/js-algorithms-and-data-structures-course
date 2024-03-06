@@ -1,4 +1,4 @@
-function mergeSortedArrays(firstArray, secondArray) {
+export function mergeSortedArrays(firstArray, secondArray) {
   const mergedResult = [];
   let firstIndex = 0;
   let secondIndex = 0;
